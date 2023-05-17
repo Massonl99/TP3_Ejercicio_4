@@ -35,6 +35,7 @@ namespace Ejercicio4
             lectores[idLector - 1].ID = idLector;
             lectores[idLector - 1].Nombre = nombre;
             lectores[idLector - 1].Apellido = apellido;
+            //hola mundo
         }
         public void RegistrarLibro(string titulo, string autor, string editorial)
         {
