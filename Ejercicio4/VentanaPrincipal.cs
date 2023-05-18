@@ -51,9 +51,9 @@ namespace Ejercicio4
             idPrestamo++;
             prestamos.Add(new Prestamo());
             libros[idLibro].prestado = true;
-            prestamos[idPrestamo-1].lector = lectores[idLector];
-            prestamos[idPrestamo-1].libro = libros[idLibro];
-            prestamos[idPrestamo-1].fechaPrestamo = fecha;
+            prestamos[idPrestamo - 1].lector = lectores[idLector];
+            prestamos[idPrestamo - 1].libro = libros[idLibro];
+            prestamos[idPrestamo - 1].fechaPrestamo = fecha;
         }
         public void RegistrarDevolucion(int nPrestamo)
         {
@@ -97,25 +97,33 @@ namespace Ejercicio4
         }
         private void btNuevoLibro_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
             VentanaNuevoLibro ventanaNuevoLibro = new VentanaNuevoLibro();
+            ventanaNuevoLibro.Location = posicionForm;
             ventanaNuevoLibro.Show();
             this.Hide();
         }
         private void btNuevoLector_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
             this.Hide();
             VentanaNuevoLector ventanaNuevoLector = new VentanaNuevoLector();
+            ventanaNuevoLector.Location = posicionForm;
             ventanaNuevoLector.Show();
         }
         private void btPrestamo_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
             VentanaPrestamo ventanaPrestamo = new VentanaPrestamo();
+            ventanaPrestamo.Location = posicionForm;
             ventanaPrestamo.Show();
             this.Hide();
         }
         private void btDevolucion_Click(object sender, EventArgs e)
         {
-            VentanaDevolucion ventanaDevolucion = new VentanaDevolucion();  
+            Point posicionForm = this.Location;
+            VentanaDevolucion ventanaDevolucion = new VentanaDevolucion();
+            ventanaDevolucion.Location = posicionForm;
             ventanaDevolucion.Show();
             this.Hide();
         }

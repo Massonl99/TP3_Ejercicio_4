@@ -24,6 +24,8 @@ namespace Ejercicio4
 
         private void btAtras_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
+            principal.Location = posicionForm;
             principal.Show();
             this.Close();
         }
@@ -35,6 +37,8 @@ namespace Ejercicio4
             }
             else
             {
+                Point posicionForm = this.Location;
+                principal.Location = posicionForm;
                 principal.RegistrarLector(tbNombre.Text, tbApellido.Text);
                 principal.Show();
                 this.Close();

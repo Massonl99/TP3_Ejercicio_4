@@ -36,6 +36,8 @@ namespace Ejercicio4
         }
         private void btAtras_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
+            principal.Location = posicionForm;
             principal.Show();
             this.Close();
         }
@@ -54,11 +56,11 @@ namespace Ejercicio4
             else
             {
                 TimeSpan time = FechaDevolucion.Value.Subtract(FechaPrestamo.Value);
-                if(time < TimeSpan.Zero)
+                if (time < TimeSpan.Zero)
                 {
                     MessageBox.Show("ERROR, Reingrese la fecha");
                 }
-                else if (time.Days > 15 )
+                else if (time.Days > 15)
                 {
                     MessageBox.Show("El libro fue entregado con mas de 15 dias\n Usuario marcado como moroso");
                     principal.CambiaraMoroso(boxLibros.SelectedIndex);

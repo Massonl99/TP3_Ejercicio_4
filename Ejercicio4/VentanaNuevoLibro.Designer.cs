@@ -43,9 +43,9 @@
             // 
             // btGuardar
             // 
-            btGuardar.Location = new Point(12, 198);
+            btGuardar.Location = new Point(12, 284);
             btGuardar.Name = "btGuardar";
-            btGuardar.Size = new Size(75, 23);
+            btGuardar.Size = new Size(100, 25);
             btGuardar.TabIndex = 22;
             btGuardar.Text = "Guardar";
             btGuardar.UseVisualStyleBackColor = true;
@@ -53,9 +53,9 @@
             // 
             // btAtras
             // 
-            btAtras.Location = new Point(218, 198);
+            btAtras.Location = new Point(352, 284);
             btAtras.Name = "btAtras";
-            btAtras.Size = new Size(75, 23);
+            btAtras.Size = new Size(100, 25);
             btAtras.TabIndex = 21;
             btAtras.Text = "Atras";
             btAtras.UseVisualStyleBackColor = true;
@@ -64,82 +64,87 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 147);
+            label5.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(12, 197);
             label5.Name = "label5";
-            label5.Size = new Size(50, 15);
+            label5.Size = new Size(99, 19);
             label5.TabIndex = 19;
             label5.Text = "Editorial";
             // 
             // tbAutor
             // 
-            tbAutor.Location = new Point(100, 112);
+            tbAutor.Location = new Point(203, 146);
             tbAutor.Name = "tbAutor";
-            tbAutor.Size = new Size(193, 23);
+            tbAutor.Size = new Size(217, 22);
             tbAutor.TabIndex = 18;
             // 
             // tbApellido
             // 
             tbApellido.AutoSize = true;
-            tbApellido.Location = new Point(12, 115);
+            tbApellido.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            tbApellido.Location = new Point(12, 149);
             tbApellido.Name = "tbApellido";
-            tbApellido.Size = new Size(37, 15);
+            tbApellido.Size = new Size(59, 19);
             tbApellido.TabIndex = 17;
             tbApellido.Text = "Autor";
             // 
             // tbTitulo
             // 
-            tbTitulo.Location = new Point(100, 83);
+            tbTitulo.Location = new Point(203, 99);
             tbTitulo.Name = "tbTitulo";
-            tbTitulo.Size = new Size(193, 23);
+            tbTitulo.Size = new Size(217, 22);
             tbTitulo.TabIndex = 16;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 86);
+            label3.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(12, 102);
             label3.Name = "label3";
-            label3.Size = new Size(37, 15);
+            label3.Size = new Size(69, 19);
             label3.TabIndex = 15;
             label3.Text = "Titulo";
             // 
             // tbID
             // 
-            tbID.Location = new Point(100, 54);
+            tbID.Location = new Point(203, 54);
             tbID.Name = "tbID";
-            tbID.Size = new Size(193, 23);
+            tbID.Size = new Size(217, 22);
             tbID.TabIndex = 14;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Unispace", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(12, 57);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(129, 19);
             label2.TabIndex = 13;
             label2.Text = "ID del Libro";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 9);
+            label1.Font = new Font("Unispace", 17.2499981F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 8);
             label1.Name = "label1";
-            label1.Size = new Size(210, 28);
+            label1.Size = new Size(320, 28);
             label1.TabIndex = 12;
             label1.Text = "Resgistrar Nuevo Libro";
             // 
             // tbEditorial
             // 
-            tbEditorial.Location = new Point(100, 144);
+            tbEditorial.Location = new Point(203, 194);
             tbEditorial.Name = "tbEditorial";
-            tbEditorial.Size = new Size(193, 23);
+            tbEditorial.Size = new Size(217, 22);
             tbEditorial.TabIndex = 23;
             // 
             // VentanaNuevoLibro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(325, 231);
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(464, 321);
             Controls.Add(tbEditorial);
             Controls.Add(btGuardar);
             Controls.Add(btAtras);
@@ -151,8 +156,11 @@
             Controls.Add(tbID);
             Controls.Add(label2);
             Controls.Add(label1);
+            Font = new Font("Unispace", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "VentanaNuevoLibro";
-            Text = "Nuevo Libro";
+            StartPosition = FormStartPosition.Manual;
+            Text = "REGISTRAR LIBRO";
             ResumeLayout(false);
             PerformLayout();
         }

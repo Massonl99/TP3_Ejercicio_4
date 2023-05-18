@@ -43,34 +43,34 @@
             // 
             // FechaPrestamo
             // 
-            FechaPrestamo.Location = new Point(88, 115);
+            FechaPrestamo.Location = new Point(112, 141);
             FechaPrestamo.Name = "FechaPrestamo";
-            FechaPrestamo.Size = new Size(235, 23);
+            FechaPrestamo.Size = new Size(302, 22);
             FechaPrestamo.TabIndex = 35;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 115);
+            label4.Location = new Point(12, 141);
             label4.Name = "label4";
-            label4.Size = new Size(57, 30);
+            label4.Size = new Size(63, 28);
             label4.TabIndex = 34;
             label4.Text = "Fecha De\r\nPrestamo";
             // 
             // boxLibros
             // 
             boxLibros.FormattingEnabled = true;
-            boxLibros.Location = new Point(88, 57);
+            boxLibros.Location = new Point(112, 48);
             boxLibros.Name = "boxLibros";
-            boxLibros.Size = new Size(235, 23);
+            boxLibros.Size = new Size(302, 22);
             boxLibros.TabIndex = 33;
             boxLibros.SelectedIndexChanged += boxLibros_SelectedIndexChanged;
             // 
             // btGuardar
             // 
-            btGuardar.Location = new Point(11, 211);
+            btGuardar.Location = new Point(12, 284);
             btGuardar.Name = "btGuardar";
-            btGuardar.Size = new Size(75, 23);
+            btGuardar.Size = new Size(100, 25);
             btGuardar.TabIndex = 31;
             btGuardar.Text = "Guardar";
             btGuardar.UseVisualStyleBackColor = true;
@@ -78,9 +78,9 @@
             // 
             // btAtras
             // 
-            btAtras.Location = new Point(248, 211);
+            btAtras.Location = new Point(352, 284);
             btAtras.Name = "btAtras";
-            btAtras.Size = new Size(75, 23);
+            btAtras.Size = new Size(100, 25);
             btAtras.TabIndex = 30;
             btAtras.Text = "Atras";
             btAtras.UseVisualStyleBackColor = true;
@@ -89,59 +89,60 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 60);
+            label3.Location = new Point(12, 51);
             label3.Name = "label3";
-            label3.Size = new Size(34, 15);
+            label3.Size = new Size(42, 14);
             label3.TabIndex = 29;
             label3.Text = "Libro";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 89);
+            label2.Location = new Point(12, 98);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(49, 14);
             label2.TabIndex = 28;
             label2.Text = "Lector";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 9);
+            label1.Font = new Font("Unispace", 17.2499981F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(12, 8);
             label1.Name = "label1";
-            label1.Size = new Size(201, 28);
+            label1.Size = new Size(306, 28);
             label1.TabIndex = 27;
             label1.Text = "Resgistrar Devolucion";
             // 
             // FechaDevolucion
             // 
-            FechaDevolucion.Location = new Point(88, 158);
+            FechaDevolucion.Location = new Point(112, 192);
             FechaDevolucion.Name = "FechaDevolucion";
-            FechaDevolucion.Size = new Size(235, 23);
+            FechaDevolucion.Size = new Size(302, 22);
             FechaDevolucion.TabIndex = 37;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 158);
+            label5.Location = new Point(12, 192);
             label5.Name = "label5";
-            label5.Size = new Size(67, 30);
+            label5.Size = new Size(77, 28);
             label5.TabIndex = 36;
             label5.Text = "Fecha De\r\nDevolucion";
             // 
             // tbLector
             // 
-            tbLector.Location = new Point(88, 86);
+            tbLector.Location = new Point(112, 90);
             tbLector.Name = "tbLector";
-            tbLector.Size = new Size(235, 23);
+            tbLector.Size = new Size(302, 22);
             tbLector.TabIndex = 38;
             // 
             // VentanaDevolucion
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(343, 257);
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(464, 321);
             Controls.Add(tbLector);
             Controls.Add(FechaDevolucion);
             Controls.Add(label5);
@@ -153,8 +154,11 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Font = new Font("Unispace", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "VentanaDevolucion";
-            Text = "Devoluciones";
+            StartPosition = FormStartPosition.Manual;
+            Text = "REGISTRAR DEVOLUCION";
             ResumeLayout(false);
             PerformLayout();
         }

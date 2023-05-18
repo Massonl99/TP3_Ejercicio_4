@@ -13,7 +13,7 @@ namespace Ejercicio4
     public partial class VentanaNuevoLibro : Form
     {
         private VentanaPrincipal? principal = Application.OpenForms.OfType<VentanaPrincipal>().FirstOrDefault();
-        
+
 
         public VentanaNuevoLibro()
         {
@@ -23,6 +23,8 @@ namespace Ejercicio4
         }
         private void btAtras_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
+            principal.Location = posicionForm;
             principal?.Show();
             this.Close();
         }
@@ -35,7 +37,9 @@ namespace Ejercicio4
             }
             else
             {
-                principal?.RegistrarLibro(tbTitulo.Text,tbAutor.Text,tbEditorial.Text);
+                Point posicionForm = this.Location;
+                principal.Location = posicionForm;
+                principal?.RegistrarLibro(tbTitulo.Text, tbAutor.Text, tbEditorial.Text);
                 principal?.Show();
                 this.Close();
             }

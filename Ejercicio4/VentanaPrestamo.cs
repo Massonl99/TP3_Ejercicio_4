@@ -51,6 +51,8 @@ namespace Ejercicio4
 
         private void btAtras_Click(object sender, EventArgs e)
         {
+            Point posicionForm = this.Location;
+            principal.Location = posicionForm;
             principal?.Show();
             this.Close();
         }
@@ -63,12 +65,14 @@ namespace Ejercicio4
             }
             else
             {
-                if(cbPrestado.Checked == true)
+                if (cbPrestado.Checked == true)
                 {
                     MessageBox.Show("ERROR, Libro prestado");
                 }
                 else
                 {
+                    Point posicionForm = this.Location;
+                    principal.Location = posicionForm;
                     principal.RegistrarPrestamo(boxLectores.SelectedIndex, boxLibros.SelectedIndex, FechaPrestamo.Value.Date);
                     principal.Show();
                     this.Close();
